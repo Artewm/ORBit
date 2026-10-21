@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ORBit</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
+    <div class="form__reaction ">
+        <div class="reaction__modal">
+            <p class="reaction__text" id="form-status" aria-live="polite">sdfsdfsdf</p>
+            <img src="img/yes.png" alt="" class="reaction__img img--yes">
+            <img src="img/no.png" alt="" class="reaction__img img--no">
+        </div>
+    </div>
     <div class="container">
         <header>
                 <div class="header__column">
@@ -212,7 +221,7 @@
             </div>
             <div class="application__column">
                 <div class="application__form">
-                     <form class="contact__form">
+                     <form class="contact__form" id="contact-form">
             <div class="contact__row">
                 <div class="form__group">
                     <label for="name">Как к вам обращаться</label>
@@ -279,6 +288,7 @@
                 <p class="form__policy">
                     Нажимая кнопку, вы соглашаетесь на обработку персональных данных.
                 </p>
+                
             </form>
                 </div>
             </div>
