@@ -1,3 +1,70 @@
+
+//Бургер меню
+const burger = document.querySelector("#burger");
+const nav = document.querySelector("#header-nav");
+const navLinks = document.querySelectorAll(".nav__link");
+const mobileButton = document.querySelector(".header__btn--mobile");
+
+function closeMenu() {
+    burger.classList.remove("active");
+    nav.classList.remove("active");
+
+    burger.setAttribute("aria-expanded", "false");
+    burger.setAttribute("aria-label", "Открыть меню");
+}
+
+function toggleMenu() {
+    const isOpen = nav.classList.toggle("active");
+
+    burger.classList.toggle("active", isOpen);
+    burger.setAttribute("aria-expanded", String(isOpen));
+    burger.setAttribute(
+        "aria-label",
+        isOpen ? "Закрыть меню" : "Открыть меню"
+    );
+}
+
+burger.addEventListener("click", toggleMenu);
+
+// Закрываем меню после перехода по ссылке
+navLinks.forEach((link) => {
+    link.addEventListener("click", closeMenu);
+});
+
+// Закрываем меню после нажатия на кнопку
+mobileButton.addEventListener("click", () => {
+    closeMenu();
+
+    // Здесь можно вызвать открытие формы заявки
+});
+
+// Закрываем меню при клике за его пределами
+document.addEventListener("click", (event) => {
+    if (
+        nav.classList.contains("active") &&
+        !nav.contains(event.target) &&
+        !burger.contains(event.target)
+    ) {
+        closeMenu();
+    }
+});
+
+// Закрываем меню по Escape
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+        closeMenu();
+    }
+});
+
+// При переходе на десктоп возвращаем обычную шапку
+window.addEventListener("resize", () => {
+    if (window.innerWidth > 900) {
+        closeMenu();
+    }
+});
+
+
+//Отправка формы
 emailjs.init({
     publicKey: "v-xutZ9LoqRMjKcXV"
 });

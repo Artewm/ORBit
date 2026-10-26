@@ -16,29 +16,51 @@
             <img src="img/no.png" alt="" class="reaction__img img--no">
         </div>
     </div>
+    
     <div class="container">
-        <header>
-                <div class="header__column">
-                    <div class="header__logo">
-                        <img src="img/logo.png" alt="" class="logo__img">
-                        <span class="logo__text">WEB STUDIO</span>
-                    </div>
-                </div>
-                <div class="header__column">
-                    <nav>
-                        <ul>
-                            <li><a href="#" class="nav__link">Услуги</a></li>
-                            <li><a href="#" class="nav__link">Портфолио</a></li>
-                            <li><a href="#" class="nav__link">Процесс</a></li>
-                            <li><a href="#" class="nav__link">О нас</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header__column">
-                    <button class="header__btn base__btn">
-                        Обсудить проект
-                    </button>
-                </div>            
+        <header class="header">
+
+        <div class="header__column">
+            <a href="#" class="header__logo">
+                <img src="img/logo.png" alt="WEB STUDIO" class="logo__img">
+                <span class="logo__text">WEB STUDIO</span>
+            </a>
+        </div>
+
+        <div class="header__column header__column--nav">
+            <nav class="header__nav" id="header-nav">
+                <ul class="nav__list">
+                    <li><a href="#services" class="nav__link">Услуги</a></li>
+                    <li><a href="#portfolio" class="nav__link">Портфолио</a></li>
+                    <li><a href="#process" class="nav__link">Процесс</a></li>
+                    <li><a href="#about" class="nav__link">О нас</a></li>
+                </ul>
+
+                <button class="header__btn base__btn header__btn--mobile">
+                    Обсудить проект
+                </button>
+            </nav>
+        </div>
+
+        <div class="header__column header__column--action">
+            <button class="header__btn base__btn">
+                Обсудить проект
+            </button>
+        </div>
+
+        <button
+            class="burger"
+            id="burger"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            aria-controls="header-nav"
+            type="button"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
         </header>
         <section class="main">
             <div class="main__column">
