@@ -4,25 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ORBit</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/main.css">
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="index.js" defer></script>
 </head>
 <body>
-    <div class="form__reaction ">
+    <div class="form__reaction">
         <div class="reaction__modal">
-            <p class="reaction__text" id="form-status" aria-live="polite">sdfsdfsdf</p>
+            <p class="reaction__text" id="form-status" aria-live="polite"></p>
             <img src="img/yes.png" alt="" class="reaction__img img--yes">
             <img src="img/no.png" alt="" class="reaction__img img--no">
         </div>
     </div>
-    
     <div class="container">
         <header class="header">
 
         <div class="header__column">
             <a href="#" class="header__logo">
-                <img src="img/logo.png" alt="WEB STUDIO" class="logo__img">
+                <img src="img/logo.svg" alt="WEB STUDIO" class="logo__img">
                 <span class="logo__text">WEB STUDIO</span>
             </a>
         </div>
@@ -33,17 +32,17 @@
                     <li><a href="#services" class="nav__link">Услуги</a></li>
                     <li><a href="#portfolio" class="nav__link">Портфолио</a></li>
                     <li><a href="#process" class="nav__link">Процесс</a></li>
-                    <li><a href="#about" class="nav__link">О нас</a></li>
+                    <li><a href="#contact" class="nav__link">О нас</a></li>
                 </ul>
 
-                <button class="header__btn base__btn header__btn--mobile">
+                <button type="button" class="header__btn base__btn header__btn--mobile">
                     Обсудить проект
                 </button>
             </nav>
         </div>
 
         <div class="header__column header__column--action">
-            <button class="header__btn base__btn">
+            <button type="button" class="header__btn base__btn">
                 Обсудить проект
             </button>
         </div>
@@ -75,7 +74,7 @@
                         <button class="base__btn main__btn">Обсудить проект</button>
                     </div>
                     <div class="main__item">
-                        <a href="#" class="view__more--link">Посмотреть работы</a>
+                        <a href="#portfolio" class="view__more--link">Посмотреть работы</a>
                         <img src="img/arrow-down.png" alt="" class="view__more--img">
                     </div>
                 </div>
@@ -134,7 +133,7 @@
             </div>
         </section>
 
-        <section class="products">
+        <section class="products" id="services">
             <div class="products__label">ЧТО МЫ ДЕЛАЕМ  /  01</div>
             <div class="products__row products__row--1">
                 <div class="products__column products__column--1">
@@ -171,7 +170,7 @@
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="portfolio">
             <span class="section__label">ИЗБРАННЫЕ ПРОЕКТЫ  /  02</span>
             <span class="section__title">Не просто красиво. <br>
 Продумано до клика.</span>
@@ -202,7 +201,7 @@
                 </div>
             </div>
         </section>
-        <section class="step">
+        <section class="step" id="process">
             <div class="step__row">
                 <span class="section__label">ПРОСТОЙ ПРОЦЕСС  /  03</span>
             </div>
@@ -232,7 +231,7 @@
                 </div>
             </div>
         </section>
-        <section class="aplication">
+        <section class="aplication" id="contact">
             <div class="application__column">
                 <div class="aplication__slogan">
                     <span class="application__label">ОБСУДИМ ВАШ ПРОЕКТ</span>
@@ -319,15 +318,15 @@
         <footer>
             <div class="footer__column">
                 <div class="footer__logo">
-                    <img src="img/logo.png" alt="logo" class="logo">
+                    <img src="img/logo.svg" alt="logo" class="logo">
                 </div>
                 <span class="footer_slogan">Цифровые решения с характером.</span>
                 <span class="footer__fqy">© 2026 ORBIT WEB STUDIO</span>
             </div>
             <div class="footer__column">
                 <ul class="footer__list">
-                    <li class="footer__list--item"><a href="#" class="item--link">УСЛУГИ</a></li>
-                    <li class="footer__list--item"><a href="#" class="item--link">ПОРТФОЛИО</a></li>
+                    <li class="footer__list--item"><a href="#services" class="item--link">УСЛУГИ</a></li>
+                    <li class="footer__list--item"><a href="#portfolio" class="item--link">ПОРТФОЛИО</a></li>
                     <li class="footer__list--item"><a href="https://t.me/indra166" class="item--link">TELEGRAM</a></li>
                     <li class="footer__list--item"><a href="mailto:artemfevralev899@gmail.com" class="item--link">EMAIL</a></li>
                     <li class="footer__list--item"><a href="tel:+79018930465" class="item--link">+7 (901) 893 04-65</a></li>
